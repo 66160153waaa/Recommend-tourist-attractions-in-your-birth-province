@@ -134,25 +134,28 @@ header nav ul li a:hover {
     background-color: #19311a;
 }
 
-/* About Section */
-#about {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2em;
-    color: #555;
-}
-
 /* Footer */
 footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Footer stays at the bottom of the screen */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 60px; /* Adjust if needed to make space for the footer */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: #333;
     color: white;
     text-align: center;
